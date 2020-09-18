@@ -6,22 +6,165 @@
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors\css\Grid (2).css">
     <link rel="stylesheet" href="resources\css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
     <title>Yami</title>
 </head>
 <body>
     <header>
         <nav>
-            <div>
-                
+            <div class = "row">
+                <!-- <img class = 'logo' src="resources\css\img\logo-b.jpg" alt="logo"> -->
+                <ul class = " main-nav">
+                    <li><a href="#section-features">About us</a> </li>
+                    <li><a href="#product">Menu</a> </li>
+                    <li><a href="#contact-us">Contact us</a> </li>
+                </ul>
             </div>
         </nav>
         <div class = " hero-text-box">
-            <h1>Goodbye junk food <br>Hello super healthy meals.</h1>
-            <a  class = "btn btn-full" href="#">I’m hungry</a>
-            <a class = " btn btn-ghost" href="#">Show me more</a>
+            <h1>Start your day sweet<br>And stay happy all day</h1>
+            <!-- <a  class = "btn btn-full" href="#">Cheer me up</a>
+            <a class = " btn btn-ghost" href="#">Show me more</a> -->
         </div>
     </header>
+    <section id = "section-features">   
+        <div class = "row">
+            <h2>
+                Do you miss Home-made? &mdash; We are here for you.
+            </h2>
+            <p class = " long-copy">Hello, we’re Sweet Bay-bakery. We know that you might have missed the smell of fresh home-made bakes. No time for cooking? Let us take care of that, we’re really good at it, we promise!
+            </p>
+        </div>
+        <div class = 'row'>
+            <div class = 'col span-1-of-4 box'>
+                <ion-icon class = ' big-icon' name="infinite-outline"></ion-icon>
+                <h3>Home-made </h3>
+                <p>Never miss home again! We really mean that. We make every baked good from scratch and create an amazing taste to bring back your childhood memories.</p>
+            </div>
+        <div class = 'row'>
+            <div class = 'col span-1-of-4 box'>
+                <ion-icon class = ' big-icon' name="thumbs-up-outline"></ion-icon>
+
+                <h3>Always fresh</h3>
+                <p>We start baking every single day from scratch to deliver fresh products. We work with the best backers in each town to ensure that you're 100% happy.</p>
+            </div>
+        <div class = 'row'>
+            <div class = 'col span-1-of-4 box'>
+                <ion-icon class = ' big-icon' name="nutrition-outline"></ion-icon>
+                <h3>100% organic</h3>
+                <p>All our products are fresh, organic and local. Good for your health, the environment, and it also tastes better!</p>
+            </div>
+        <div class = 'row'>
+            <div class = 'col span-1-of-4 box'>
+                <ion-icon class = ' big-icon' name="card-outline"></ion-icon>
+                <h3>Order anything</h3>
+                <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious sweets. It's up to you!</p>
+            </div>
+        </div>
+    </section>
+    <section id = "product">
+        <div class = "row">
+            <h2>Menu</h2>
+        <ul class ='show-case'>
+            <li>
+                <figure class = 'photos'>
+                    <img src="resources\css\img\apple-mufin.jpg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class = 'photos'>
+                    <img src="resources\css\img\crossant.jpg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class = 'photos'>
+                    <img src="resources\css\img\cupcake.jpg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class = 'photos'>
+                    <img src="resources\css\img\macaron.jpg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class = 'photos'>
+                    <img src="resources\css\img\tart.jpg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class = 'photos'>
+                    <img src="resources\css\img\danish.jpg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class = 'photos'>
+                    <img src="resources\css\img\cheese.jpg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class = 'photos'>
+                    <img src="resources\css\img\swiss-roll.jpg" alt="">
+                </figure>
+            </li>
+        </ul>
+    </div>
+    </section>
+    <section id = "contact-us">
+        <div class = "row">
+    <h2>Contact us</h2>
+    <div class = "map  col span-1-of-2">
+    <div class= "contact">
+    <h4 >Direction:</h4>
+    <p>Use the map to find us.</p>
+    <h4>Phone number</h4>
+    <p><a href="tel:+62896706255135">+62-896-7062-55135</a></p>
+    <h4>Or you can send us a message.</h4>
 </div>
+<form action="/#" method="post">
+   
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+        <button class="sub-btn" type="button">Send it!</button>
+    </form>
+    
+</div>
+    <!--The div element for the map -->
+    <div id="map" class = ' col span-2-of-2'></div>
+</div>
+</section>
+<section id ='social-media'>
+    <div class = "row">
+    
+    <h2>Follow us on social media</h2>
+    <div class="social-buttons">
+    <ul>
+        <li><a href="https://www.instagram.com/"><img src="resources\css\img\insta.jpg" alt="facebook"></a></li>
+      <li><a href="http://facebook.com"><img src="resources\css\img\facebook.png" alt="facebook"></a></li>
+    </ul>
+ 
+    </div>
+      </div>
+          
+ 
+
+</section>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: -25.344, lng: 131.036};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 4, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+            </script>
+            <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+            </script>
+</div>
+
 </body>
 </html>
+<script  src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
